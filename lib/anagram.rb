@@ -10,7 +10,7 @@ class Anagram
     @matches = []
     @reverse = @word.reverse
     words.each do |w|
-      w.split("")
+      w = w.split("")
       @matches << w
     end
     @matches

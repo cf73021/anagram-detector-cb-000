@@ -10,13 +10,8 @@ class Anagram
     @matches = []
     @reverse = @word.reverse
     words.each do |w|
-      x = []
-      r = []
       w.split("")
-      r = @reverse.split("")
-      x = w.sort
-      r = @reverse.sort
-      @matches << w if x == r
+
     end
     @matches
   end

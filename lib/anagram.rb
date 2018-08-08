@@ -9,7 +9,10 @@ class Anagram
   def match(words)
     @matches = []
     @reverse = @word.reverse
-    words.each { |w| @matches << w if w.sort == @reverse.sort}
+    words.each do |w|
+      w.split(", ")
+
+    end
     @matches
   end
 end

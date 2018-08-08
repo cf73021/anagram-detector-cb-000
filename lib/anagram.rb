@@ -9,7 +9,7 @@ class Anagram
   def match(words)
     matches = []
     @reverse = @word.reverse
-    words.each { |w| matches << w if w == @reverse} 
-    end
+    words.each { |w| matches << w if w == @reverse}
+    @matches
   end
 end

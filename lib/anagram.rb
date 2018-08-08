@@ -7,6 +7,7 @@ class Anagram
   end
 
   def match(words)
+    matches = []
     @reverse = @word.reverse
     if words.include?(@reverse) == false
       return nil

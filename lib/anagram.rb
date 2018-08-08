@@ -13,6 +13,8 @@ class Anagram
       word_holder = w
       w = w.split("")
       w = w.sort
+      r = @reverse.split("")
+      r = r.sort
 
       @matches << w
     end

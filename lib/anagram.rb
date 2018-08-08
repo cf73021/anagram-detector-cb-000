@@ -12,7 +12,7 @@ class Anagram
     words.each do |w|
       x = []
       r = []
-      x = w.split("")
+      w.split("")
       r = @reverse.split("")
       x = w.sort
       r = @reverse.sort

@@ -8,6 +8,7 @@ class Anagram
 
   def match(words)
     @reverse = @word.reverse
-    words.include?(@reverse)
+    if words.include?(@reverse) == false
+      return nil
   end
 end

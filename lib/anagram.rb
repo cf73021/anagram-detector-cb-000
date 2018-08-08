@@ -11,7 +11,7 @@ class Anagram
     @reverse = @word.reverse
     words.each do |w|
       w.split("")
-
+      @matches << w
     end
     @matches
   end

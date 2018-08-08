@@ -8,6 +8,6 @@ class Anagram
 
   def match
     @reverse = @word.reverse
-    
+    @reverse
   end
 end

@@ -9,8 +9,7 @@ class Anagram
   def match(words)
     matches = []
     @reverse = @word.reverse
-    if words.include?(@reverse) == false
-      return nil
+    words.each { |w| matches << w if w == @reverse} 
     end
   end
 end

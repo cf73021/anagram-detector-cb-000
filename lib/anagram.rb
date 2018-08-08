@@ -10,5 +10,6 @@ class Anagram
     @reverse = @word.reverse
     if words.include?(@reverse) == false
       return nil
+    end
   end
 end

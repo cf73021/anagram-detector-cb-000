@@ -15,7 +15,6 @@ class Anagram
       w = w.sort
       r = @reverse.split("")
       r = r.sort
-
       @matches << word_holder if r == w
     end
     @matches
